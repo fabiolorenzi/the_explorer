@@ -1,27 +1,37 @@
 [
-    {
-        "file": "D:\\\\Epic Games\\\\Projects\\\\TheExplorer\\\\Source\\\\TheExplorer\\\\PlayerCharacter.cpp",
-        "command": "\"cl.exe\" @\"D:\\Epic Games\\Projects\\TheExplorer\\.vscode\\compileCommands_TheExplorer\\TheExplorer.187.rsp\"",
-        "directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
-    },
-    {
-        "file": "D:\\\\Epic Games\\\\Projects\\\\TheExplorer\\\\Source\\\\TheExplorer\\\\PlayerCharacter.h",
-        "command": "\"cl.exe\" @\"D:\\Epic Games\\Projects\\TheExplorer\\.vscode\\compileCommands_TheExplorer\\TheExplorer.187.rsp\"",
-        "directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
-    },
-    {
-        "file": "D:\\\\Epic Games\\\\Projects\\\\TheExplorer\\\\Source\\\\TheExplorer\\\\TheExplorer.Build.cs",
-        "command": "\"cl.exe\" @\"D:\\Epic Games\\Projects\\TheExplorer\\.vscode\\compileCommands_TheExplorer\\TheExplorer.187.rsp\"",
-        "directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
-    },
-    {
-        "file": "D:\\\\Epic Games\\\\Projects\\\\TheExplorer\\\\Source\\\\TheExplorer\\\\TheExplorer.cpp",
-        "command": "\"cl.exe\" @\"D:\\Epic Games\\Projects\\TheExplorer\\.vscode\\compileCommands_TheExplorer\\TheExplorer.187.rsp\"",
-        "directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
-    },
-    {
-        "file": "D:\\\\Epic Games\\\\Projects\\\\TheExplorer\\\\Source\\\\TheExplorer\\\\TheExplorer.h",
-        "command": "\"cl.exe\" @\"D:\\Epic Games\\Projects\\TheExplorer\\.vscode\\compileCommands_TheExplorer\\TheExplorer.187.rsp\"",
-        "directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
-    }
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\TheExplorer\\\\Source\\\\TheExplorer\\\\MainGameMode.cpp",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\TheExplorer\\.vscode\\compileCommands_TheExplorer\\TheExplorer.187.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\TheExplorer\\\\Source\\\\TheExplorer\\\\MainGameMode.h",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\TheExplorer\\.vscode\\compileCommands_TheExplorer\\TheExplorer.187.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\TheExplorer\\\\Source\\\\TheExplorer\\\\PlayerCharacter.cpp",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\TheExplorer\\.vscode\\compileCommands_TheExplorer\\TheExplorer.187.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\TheExplorer\\\\Source\\\\TheExplorer\\\\PlayerCharacter.h",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\TheExplorer\\.vscode\\compileCommands_TheExplorer\\TheExplorer.187.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\TheExplorer\\\\Source\\\\TheExplorer\\\\TheExplorer.Build.cs",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\TheExplorer\\.vscode\\compileCommands_TheExplorer\\TheExplorer.187.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\TheExplorer\\\\Source\\\\TheExplorer\\\\TheExplorer.cpp",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\TheExplorer\\.vscode\\compileCommands_TheExplorer\\TheExplorer.187.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Epic Games\\\\Projects\\\\TheExplorer\\\\Source\\\\TheExplorer\\\\TheExplorer.h",
+		"command": "cl.exe @\"D:\\Epic Games\\Projects\\TheExplorer\\.vscode\\compileCommands_TheExplorer\\TheExplorer.187.rsp\"",
+		"directory": "D:\\Epic Games\\UE_4.26\\Engine\\Source"
+	}
 ]
