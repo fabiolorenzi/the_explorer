@@ -1,128 +1,123 @@
 {
-	"version": "0.2.0",
-	"configurations": [
-		{
-			"name": "TheExplorer (Debug)",
-			"request": "launch",
-			"preLaunchTask": "TheExplorer Win64 Debug Build",
-			"program": "D:\\Epic Games\\Projects\\TheExplorer\\Binaries\\Win64\\UE4-Win64-Debug.exe",
-			"args": [
-			],
-			"cwd": "D:\\Epic Games\\UE_4.26",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
-		},
-		{
-			"name": "TheExplorer (DebugGame)",
-			"request": "launch",
-			"preLaunchTask": "TheExplorer Win64 DebugGame Build",
-			"program": "D:\\Epic Games\\Projects\\TheExplorer\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
-			"args": [
-			],
-			"cwd": "D:\\Epic Games\\UE_4.26",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
-		},
-		{
-			"name": "TheExplorer (Development)",
-			"request": "launch",
-			"preLaunchTask": "TheExplorer Win64 Development Build",
-			"program": "D:\\Epic Games\\Projects\\TheExplorer\\Binaries\\Win64\\UE4.exe",
-			"args": [
-			],
-			"cwd": "D:\\Epic Games\\UE_4.26",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
-		},
-		{
-			"name": "TheExplorer (Shipping)",
-			"request": "launch",
-			"preLaunchTask": "TheExplorer Win64 Shipping Build",
-			"program": "D:\\Epic Games\\Projects\\TheExplorer\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
-			"args": [
-			],
-			"cwd": "D:\\Epic Games\\UE_4.26",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
-		},
-		{
-			"name": "TheExplorer (Test)",
-			"request": "launch",
-			"preLaunchTask": "TheExplorer Win64 Test Build",
-			"program": "D:\\Epic Games\\Projects\\TheExplorer\\Binaries\\Win64\\UE4-Win64-Test.exe",
-			"args": [
-			],
-			"cwd": "D:\\Epic Games\\UE_4.26",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
-		},
-		{
-			"name": "TheExplorerEditor (Debug)",
-			"request": "launch",
-			"preLaunchTask": "TheExplorerEditor Win64 Debug Build",
-			"program": "D:\\Epic Games\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
-			"args": [
-				"D:\\Epic Games\\Projects\\TheExplorer\\TheExplorer.uproject"
-			],
-			"cwd": "D:\\Epic Games\\UE_4.26",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
-		},
-		{
-			"name": "TheExplorerEditor (DebugGame)",
-			"request": "launch",
-			"preLaunchTask": "TheExplorerEditor Win64 DebugGame Build",
-			"program": "D:\\Epic Games\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
-			"args": [
-				"D:\\Epic Games\\Projects\\TheExplorer\\TheExplorer.uproject"
-			],
-			"cwd": "D:\\Epic Games\\UE_4.26",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
-		},
-		{
-			"name": "TheExplorerEditor (Development)",
-			"request": "launch",
-			"preLaunchTask": "TheExplorerEditor Win64 Development Build",
-			"program": "D:\\Epic Games\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor.exe",
-			"args": [
-				"D:\\Epic Games\\Projects\\TheExplorer\\TheExplorer.uproject"
-			],
-			"cwd": "D:\\Epic Games\\UE_4.26",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
-		},
-		{
-			"name": "Generate Project Files",
-			"type": "clr",
-			"request": "launch",
-			"program": "D:\\Epic Games\\UE_4.26\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
-			"console": "externalTerminal",
-			"args": [
-				"-projectfiles",
-				"-vscode",
-				"-project=D:\\Epic Games\\Projects\\TheExplorer\\TheExplorer.uproject",
-				"-game",
-				"-engine"
-			],
-			"internalConsoleOptions": "openOnSessionStart",
-			"cwd": "D:\\Epic Games\\UE_4.26"
-		}
-	]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "TheExplorer (Debug)",
+            "request": "launch",
+            "preLaunchTask": "TheExplorer Win64 Debug Build",
+            "program": "D:\\Epic Games\\Projects\\TheExplorer\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+            "args": [],
+            "cwd": "D:\\Epic Games\\UE_4.26",
+            "stopAtEntry": false,
+            "type": "cppvsdbg",
+            "visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis",
+            "console": "externalTerminal"
+        },
+        {
+            "name": "TheExplorer (DebugGame)",
+            "request": "launch",
+            "preLaunchTask": "TheExplorer Win64 DebugGame Build",
+            "program": "D:\\Epic Games\\Projects\\TheExplorer\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+            "args": [],
+            "cwd": "D:\\Epic Games\\UE_4.26",
+            "stopAtEntry": false,
+            "type": "cppvsdbg",
+            "visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis",
+            "console": "externalTerminal"
+        },
+        {
+            "name": "TheExplorer (Development)",
+            "request": "launch",
+            "preLaunchTask": "TheExplorer Win64 Development Build",
+            "program": "D:\\Epic Games\\Projects\\TheExplorer\\Binaries\\Win64\\UE4.exe",
+            "args": [],
+            "cwd": "D:\\Epic Games\\UE_4.26",
+            "stopAtEntry": false,
+            "type": "cppvsdbg",
+            "visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis",
+            "console": "externalTerminal"
+        },
+        {
+            "name": "TheExplorer (Shipping)",
+            "request": "launch",
+            "preLaunchTask": "TheExplorer Win64 Shipping Build",
+            "program": "D:\\Epic Games\\Projects\\TheExplorer\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+            "args": [],
+            "cwd": "D:\\Epic Games\\UE_4.26",
+            "stopAtEntry": false,
+            "type": "cppvsdbg",
+            "visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis",
+            "console": "externalTerminal"
+        },
+        {
+            "name": "TheExplorer (Test)",
+            "request": "launch",
+            "preLaunchTask": "TheExplorer Win64 Test Build",
+            "program": "D:\\Epic Games\\Projects\\TheExplorer\\Binaries\\Win64\\UE4-Win64-Test.exe",
+            "args": [],
+            "cwd": "D:\\Epic Games\\UE_4.26",
+            "stopAtEntry": false,
+            "type": "cppvsdbg",
+            "visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis",
+            "console": "externalTerminal"
+        },
+        {
+            "name": "TheExplorerEditor (Debug)",
+            "request": "launch",
+            "preLaunchTask": "TheExplorerEditor Win64 Debug Build",
+            "program": "D:\\Epic Games\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+            "args": [
+                "D:\\Epic Games\\Projects\\TheExplorer\\TheExplorer.uproject"
+            ],
+            "cwd": "D:\\Epic Games\\UE_4.26",
+            "stopAtEntry": false,
+            "type": "cppvsdbg",
+            "visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis",
+            "console": "externalTerminal"
+        },
+        {
+            "name": "TheExplorerEditor (DebugGame)",
+            "request": "launch",
+            "preLaunchTask": "TheExplorerEditor Win64 DebugGame Build",
+            "program": "D:\\Epic Games\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+            "args": [
+                "D:\\Epic Games\\Projects\\TheExplorer\\TheExplorer.uproject"
+            ],
+            "cwd": "D:\\Epic Games\\UE_4.26",
+            "stopAtEntry": false,
+            "type": "cppvsdbg",
+            "visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis",
+            "console": "externalTerminal"
+        },
+        {
+            "name": "TheExplorerEditor (Development)",
+            "request": "launch",
+            "preLaunchTask": "TheExplorerEditor Win64 Development Build",
+            "program": "D:\\Epic Games\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+            "args": [
+                "D:\\Epic Games\\Projects\\TheExplorer\\TheExplorer.uproject"
+            ],
+            "cwd": "D:\\Epic Games\\UE_4.26",
+            "stopAtEntry": false,
+            "type": "cppvsdbg",
+            "visualizerFile": "D:\\Epic Games\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis",
+            "console": "externalTerminal"
+        },
+        {
+            "name": "Generate Project Files",
+            "type": "clr",
+            "request": "launch",
+            "program": "D:\\Epic Games\\UE_4.26\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+            "console": "externalTerminal",
+            "args": [
+                "-projectfiles",
+                "-vscode",
+                "-project=D:\\Epic Games\\Projects\\TheExplorer\\TheExplorer.uproject",
+                "-game",
+                "-engine"
+            ],
+            "internalConsoleOptions": "openOnSessionStart",
+            "cwd": "D:\\Epic Games\\UE_4.26"
+        }
+    ]
 }
