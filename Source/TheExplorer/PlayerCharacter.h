@@ -30,6 +30,9 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 		float Power;
 
+	UFUNCTION()
+		void OnBeginOverlap(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
 	float Life;
 	bool IsPlayerDead;
 
@@ -37,6 +40,7 @@ public:
 	void StopJumping();
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
+	void Death();
 	void RestartGame();
 
 protected:

@@ -34,10 +34,19 @@ APlayerCharacter::APlayerCharacter()
 	Life = 100.0f;
 }
 
+void APlayerCharacter::OnBeginOverlap(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (OtherActor->ActorHasTag("DeathLine")) {
+		Death();
+	}
+}
+
 // Called when the game starts or when spawned
 void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &APlayerCharacter::OnBeginOverlap);
 }
 
 // Called every frame
@@ -103,6 +112,15 @@ void APlayerCharacter::MoveRight(float Axis)
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		AddMovementInput(Direction, Axis);
 	};
+}
+
+void APlayerCharacter::Death()
+{
+	IsPlayerDead = true;
+	GetMesh()->SetSimulatePhysics(true);
+
+	FTimerHandle UnusedHandle;
+	GetWorldTimerManager().SetTimer(UnusedHandle, this, &APlayerCharacter::RestartGame, 3.0f, false);
 }
 
 void APlayerCharacter::RestartGame()
