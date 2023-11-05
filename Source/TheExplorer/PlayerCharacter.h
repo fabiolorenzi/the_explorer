@@ -25,15 +25,16 @@ public:
 		USpringArmComponent* CameraBoom;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 		UCameraComponent* FollowCamera;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=PlayerMusicSkill)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=PlayerVars)
 		bool IsJumping;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 		float Power;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=PlayerVars)
+		float Life;
 
 	UFUNCTION()
 		void OnBeginOverlap(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
-	float Life;
 	bool IsPlayerDead;
 
 	void Jump();

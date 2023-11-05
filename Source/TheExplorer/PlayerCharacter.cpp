@@ -117,6 +117,7 @@ void APlayerCharacter::MoveRight(float Axis)
 void APlayerCharacter::Death()
 {
 	IsPlayerDead = true;
+	Life = 0.0f;
 	GetMesh()->SetSimulatePhysics(true);
 
 	FTimerHandle UnusedHandle;
