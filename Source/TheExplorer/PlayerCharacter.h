@@ -25,11 +25,11 @@ public:
 		USpringArmComponent* CameraBoom;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 		UCameraComponent* FollowCamera;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=PlayerVars)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerVars)
 		bool IsJumping;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 		float Power;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=PlayerVars)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerVars)
 		float Life;
 
 	UFUNCTION()
@@ -38,6 +38,7 @@ public:
 	bool IsPlayerDead;
 
 	void Jump();
+	
 	void StopJumping();
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
