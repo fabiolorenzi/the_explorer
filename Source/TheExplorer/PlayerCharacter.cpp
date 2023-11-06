@@ -121,7 +121,7 @@ void APlayerCharacter::Death()
 	GetMesh()->SetSimulatePhysics(true);
 
 	FTimerHandle UnusedHandle;
-	GetWorldTimerManager().SetTimer(UnusedHandle, this, &APlayerCharacter::RestartGame, 3.0f, false);
+	GetWorldTimerManager().SetTimer(UnusedHandle, this, &APlayerCharacter::RestartGame, 5.0f, false);
 }
 
 void APlayerCharacter::RestartGame()
