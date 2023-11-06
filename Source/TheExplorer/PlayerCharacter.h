@@ -13,6 +13,8 @@
 
 #include "PlayerCharacter.generated.h"
 
+class USoundCue;
+
 UCLASS()
 class THEEXPLORER_API APlayerCharacter : public ACharacter
 {
@@ -47,6 +49,10 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
+
+private:
+	UPROPERTY(EditAnywhere)
+		USoundCue* DrownSound;
 
 public:	
 	virtual void Tick(float DeltaTime) override;
