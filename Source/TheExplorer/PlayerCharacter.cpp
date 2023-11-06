@@ -5,6 +5,8 @@
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundCue.h"
 
+#include "Teletransport.h"
+
 // Sets default values
 APlayerCharacter::APlayerCharacter()
 {
@@ -40,7 +42,10 @@ void APlayerCharacter::OnBeginOverlap(UPrimitiveComponent* HitComp, AActor* Othe
 	if (OtherActor->ActorHasTag("DeathLine")) {
 		UGameplayStatics::PlaySound2D(this, DrownSound);
 		Death();
-	}
+	} else if (OtherActor->ActorHasTag("Teletransport_Level_One") || OtherActor->ActorHasTag("Teletransport_Level_Two")) {
+		UE_LOG(LogTemp, Warning, TEXT("Touched"));
+		Cast<ATeletransport>(OtherActor)->Catch();
+	};
 }
 
 // Called when the game starts or when spawned
