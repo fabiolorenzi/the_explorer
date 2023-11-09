@@ -25,6 +25,7 @@ void ATeletransport::Tick(float DeltaTime)
 void ATeletransport::Catch()
 {
 	TeletransportCatchEvent.Broadcast(TeletransportType);
+	UE_LOG(LogTemp, Warning, TEXT("called"));
 }
 
 void ATeletransport::RotateCrystal(float rotationValue)
