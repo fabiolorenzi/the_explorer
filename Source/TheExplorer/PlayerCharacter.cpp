@@ -34,6 +34,7 @@ APlayerCharacter::APlayerCharacter()
 
 	IsPlayerDead = false;
 	IsJumping = false;
+	HasAttacked = false;
 	Life = 100.0f;
 }
 
@@ -82,6 +83,7 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &APlayerCharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &APlayerCharacter::StopJumping);
+	PlayerInputComponent->BindAction("Attack", IE_Pressed, this, &APlayerCharacter::Attack);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &APlayerCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &APlayerCharacter::MoveRight);
@@ -91,6 +93,22 @@ void APlayerCharacter::Jump()
 {
 	ACharacter::Jump();
 	IsJumping = true;
+}
+
+void APlayerCharacter::Attack()
+{
+	if (!HasAttacked && !IsJumping) {
+		HasAttacked = true;
+		UE_LOG(LogTemp, Warning, TEXT("Attack"));
+
+		FTimerHandle UnusedHandle;
+		GetWorldTimerManager().SetTimer(UnusedHandle, this, &APlayerCharacter::ResetAttack, 0.5f, false);
+	};
+}
+
+void APlayerCharacter::ResetAttack()
+{
+	HasAttacked = false;
 }
 
 void APlayerCharacter::StopJumping()

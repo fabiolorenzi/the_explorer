@@ -29,6 +29,8 @@ public:
 		UCameraComponent* FollowCamera;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerVars)
 		bool IsJumping;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerVars)
+		bool HasAttacked;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 		float Power;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerVars)
@@ -40,6 +42,8 @@ public:
 	bool IsPlayerDead;
 
 	void Jump();
+	void Attack();
+	void ResetAttack();
 	
 	void StopJumping();
 	void MoveForward(float Axis);
