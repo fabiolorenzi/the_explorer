@@ -32,6 +32,7 @@ APlayerCharacter::APlayerCharacter()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
 
+	IsInPause = false;
 	IsPlayerDead = false;
 	IsJumping = false;
 	HasAttacked = false;

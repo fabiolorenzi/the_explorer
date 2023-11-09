@@ -27,6 +27,8 @@ public:
 		USpringArmComponent* CameraBoom;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 		UCameraComponent* FollowCamera;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = PlayerVars)
+		bool IsInPause;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerVars)
 		bool IsJumping;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerVars)
