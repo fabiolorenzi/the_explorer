@@ -19,9 +19,15 @@ void ATeletransport::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	RotateCrystal(RotationValue);
 }
 
 void ATeletransport::Catch()
 {
 	TeletransportCatchEvent.Broadcast(TeletransportType);
+}
+
+void ATeletransport::RotateCrystal(float rotationValue)
+{
+	AddActorLocalRotation(FRotator(0, GetActorRotation().Vector().Z + rotationValue, 0));
 }

@@ -31,9 +31,14 @@ public:
 
 	void Catch();
 
+	void RotateCrystal(float rotationValue);
+
 	UPROPERTY(EditAnywhere)
 		ETeletransportType TeletransportType = ETeletransportType::Level_One;
 
 	UPROPERTY(BlueprintAssignable, BlueprintCallable)
 		FTeletransportCatchEvent TeletransportCatchEvent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TeletransportVars)
+		float RotationValue;
 };
