@@ -41,4 +41,7 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = TeletransportVars)
 		float RotationValue;
+
+	UPROPERTY(EditAnywhere)
+		FName LevelName;
 };
