@@ -85,6 +85,7 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &APlayerCharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &APlayerCharacter::StopJumping);
 	PlayerInputComponent->BindAction("Attack", IE_Pressed, this, &APlayerCharacter::Attack);
+	PlayerInputComponent->BindAction("Pause", IE_Pressed, this, &APlayerCharacter::PauseGame).bExecuteWhenPaused = true;
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &APlayerCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &APlayerCharacter::MoveRight);
@@ -148,6 +149,13 @@ void APlayerCharacter::Death()
 
 	FTimerHandle UnusedHandle;
 	GetWorldTimerManager().SetTimer(UnusedHandle, this, &APlayerCharacter::RestartGame, 5.0f, false);
+}
+
+void APlayerCharacter::PauseGame()
+{
+	IsInPause = !IsInPause;
+
+	UGameplayStatics::GetPlayerController(GetWorld(), 0)->Pause();
 }
 
 void APlayerCharacter::RestartGame()

@@ -51,6 +51,7 @@ public:
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
 	void Death();
+	void PauseGame();
 	void RestartGame();
 
 protected:
