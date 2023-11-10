@@ -156,6 +156,9 @@ void APlayerCharacter::PauseGame()
 	IsInPause = !IsInPause;
 
 	UGameplayStatics::GetPlayerController(GetWorld(), 0)->Pause();
+	UGameplayStatics::GetPlayerController(GetWorld(), 0)->bShowMouseCursor = IsInPause;
+	UGameplayStatics::GetPlayerController(GetWorld(), 0)->bEnableClickEvents = IsInPause;
+	UGameplayStatics::GetPlayerController(GetWorld(), 0)->bEnableMouseOverEvents = IsInPause;
 }
 
 void APlayerCharacter::RestartGame()
