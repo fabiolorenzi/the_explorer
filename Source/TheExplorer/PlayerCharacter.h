@@ -40,6 +40,10 @@ public:
 
 	UFUNCTION()
 		void OnBeginOverlap(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	UFUNCTION(BlueprintCallable)
+		void RestartGame();
+	UFUNCTION(BlueprintCallable)
+		void ReturnToHub();
 
 	bool IsPlayerDead;
 
@@ -52,7 +56,6 @@ public:
 	void MoveRight(float Axis);
 	void Death();
 	void PauseGame();
-	void RestartGame();
 
 protected:
 	virtual void BeginPlay() override;

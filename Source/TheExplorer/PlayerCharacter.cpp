@@ -165,3 +165,8 @@ void APlayerCharacter::RestartGame()
 {
 	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
 }
+
+void APlayerCharacter::ReturnToHub()
+{
+	UGameplayStatics::OpenLevel(this, FName("HubLevel"), false);
+}
