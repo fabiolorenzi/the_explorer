@@ -6,6 +6,7 @@
 #include "Sound/SoundCue.h"
 
 #include "Teletransport.h"
+#include "Treasure.h"
 
 // Sets default values
 APlayerCharacter::APlayerCharacter()
@@ -37,6 +38,7 @@ APlayerCharacter::APlayerCharacter()
 	IsJumping = false;
 	HasAttacked = false;
 	Life = 100.0f;
+	LevelTreasures = 0;
 }
 
 void APlayerCharacter::OnBeginOverlap(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
@@ -47,6 +49,10 @@ void APlayerCharacter::OnBeginOverlap(UPrimitiveComponent* HitComp, AActor* Othe
 	} else if (OtherActor->ActorHasTag("Teletransport_Level_One") || OtherActor->ActorHasTag("Teletransport_Level_Two")) {
 		UE_LOG(LogTemp, Warning, TEXT("Touched"));
 		Cast<ATeletransport>(OtherActor)->Catch();
+	} else if (OtherActor->ActorHasTag("Treasure") && !IsHubLevel) {
+		LevelTreasures += 1;
+		Life = 100.0f;
+		Cast<ATreasure>(OtherActor)->Catch();
 	};
 }
 
@@ -71,6 +77,8 @@ void APlayerCharacter::Tick(float DeltaTime)
 			FTimerHandle UnusedHandle;
 			GetWorldTimerManager().SetTimer(UnusedHandle, this, &APlayerCharacter::RestartGame, 3.0f, false);
 		};
+	} else if (!IsHubLevel) {
+		Life -= DeltaTime;
 	};
 }
 

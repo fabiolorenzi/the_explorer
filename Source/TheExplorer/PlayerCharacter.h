@@ -37,6 +37,10 @@ public:
 		float Power;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerVars)
 		float Life;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerVars)
+		int LevelTreasures;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = PlayerVars)
+		bool IsHubLevel;
 
 	UFUNCTION()
 		void OnBeginOverlap(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
